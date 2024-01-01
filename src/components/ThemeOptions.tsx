@@ -15,12 +15,12 @@ function ThemeOptions() {
     const setTheme = useTheme((state:any)=>state.setTheme)
 
     const themes = [
-        { value: "coastal", imgUrl: coastal },
-        { value: "modern", imgUrl: modern },
-        { value: "professional", imgUrl: professional },
-        { value: "tribal", imgUrl: tribal },
-        { value: "tropical", imgUrl: tropical },
-        { value: "vintage", imgUrl: vintage },
+        { value: "Coastal", imgUrl: coastal },
+        { value: "Modern", imgUrl: modern },
+        { value: "Professional", imgUrl: professional },
+        { value: "Tribal", imgUrl: tribal },
+        { value: "Tropical", imgUrl: tropical },
+        { value: "Vintage", imgUrl: vintage },
     ]
 
     function handleClick(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
@@ -34,9 +34,9 @@ function ThemeOptions() {
           {
               themes.map((theme, index) => {
                   return (
-                      <div onClick={handleClick} key={index} className='cursor-pointer transition-all flex flex-col items-center gap-2 group'>
+                      <div onClick={handleClick} key={index} className='cursor-pointer flex flex-col items-center gap-2 group transition-all ease-in-out delay-5 hover:scale-110'>
                           <Image src={theme.imgUrl} alt='theme'  className='rounded-lg group-hover:opacity-80'/>
-                          <p className='font-semibold text-white'>{theme.value}</p>
+                          <p className='font-semibold text-red-500'>{theme.value}</p>
                       </div>
                   )
           })

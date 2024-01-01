@@ -21,7 +21,7 @@ function SelectInput() {
   return (
 
     <div className="w-full text-black">
-      <Select onChange={handleChange} options={options} defaultValue={options[0]} />
+      <Select onChange={handleChange} options={options} defaultValue={options[0]}/>
     </div>
 
   )

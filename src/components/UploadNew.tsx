@@ -22,9 +22,9 @@ function UploadNew() {
 
   return preview ?(
     <main className='flex flex-col items-center justify-center'>
-         <div className='border p-4 w-full m-5 bg-sky-500 text-white text-center rounded-lg hover:opacity-90 active:scale-[.98] transition text-2xl'>
+         <div className='p-4 w-full m-5 bg-red-500 transition-all ease-in-out delay-5 hover:scale-110 text-black text-center rounded-lg text-2xl'>
              <CldUploadButton className='text-xl' onUpload={onUpload} uploadPreset="pwvwp5hs">
-               <span>Change Image</span>
+               <span className='font-bold text-2xl'>Change Image</span>
              </CldUploadButton>
         </div>
         <div>
@@ -34,8 +34,8 @@ function UploadNew() {
   ) :(
     <main className='flex flex-col items-center justify-center w-full'>
         
-        <div className='border p-5 w-full bg-sky-500 text-white text-center rounded-lg hover:opacity-90 active:scale-[.98] transition text-2xl'>
-            <CldUploadButton onUpload={onUpload} uploadPreset="pwvwp5hs">Upload Image</CldUploadButton> 
+        <div className='p-4 w-full bg-red-500 transition-all ease-in-out delay-5 hover:scale-110 text-black text-center rounded-lg text-2xl'>
+            <CldUploadButton onUpload={onUpload} uploadPreset="pwvwp5hs" className='font-bold text-2xl'>Upload Image</CldUploadButton> 
         </div>
 
     </main>
